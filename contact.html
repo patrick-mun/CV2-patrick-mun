@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Patrick Munier</title>
+    <link rel="stylesheet" href="CV.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Ici, vous pouvez ajouter votre logo ou votre photo -->
+        <div>
+            <img class="logo" src="ADN---3.png" alt="logo génétique moléculaire" width="70px" height="100px">
+        </div>
+        <div class="header-content">
+            <h1>Patrick Munier</h1>
+        </div>
+
+        <!---------------------------------------------menu burger pour les ecrans mobiles--------------------------------------------->
+
+        <div id="burger-menu" onclick="toggleNav()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <nav id="mobile-nav">
+            <ul>
+                <li><a href="index.html">CURRICULUM VITAE</a></li>
+                <li><a href="Lettre_de_recommandation.html">RECOMMANDATION & DOCUMENTS</a></li>
+                <li><a href="bilan_de_carriere.html">CARRIERE</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-------------------------------------------fin du menu burger lien a la fonction JS toggleNav--------------------------------->
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="contact-info-modal">
+                <div class="info">
+                <h2>Contact</h2>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>Adresse: 115 ter route des Bambous 97400 St Denis</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: patrick.munier@chu-reunion.fr</p>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i>Mobile: 06 92 07 45 04</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>Tel pro: 02 62 90 64 08</p>
+                </div>             
+            </section>
+        </main>
+    </div>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById('mobile-nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
