@@ -361,7 +361,7 @@ section h2 {
 
 /* Media query pour les téléphones */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     /*modificaton de la tructure des pages*/
 
     body, html {
